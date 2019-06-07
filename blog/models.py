@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User #one to many relationship (user to many posts)
+from django.urls import reverse
 
 # Create your models here.
 class Post(models.Model): #database klase
@@ -11,6 +12,9 @@ class Post(models.Model): #database klase
 
     def __str__(self): #magic/special method __str__
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={'pk': self.pk})
 
 # python manage.py sqlmigrate name - parodo SQL koda
 # makemigrations ir po to migrate
