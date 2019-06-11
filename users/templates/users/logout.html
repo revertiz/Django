@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %} #crispy forms kaip bootstrapas formoms
+   {% block content %}
+      <div class="content-section">       
+             <div class="form-group">
+                <small class="text-muted">You have been logged out</small>
+            </div>
+    
+            <div class="border-top pt-3">
+                <small class="text-muted"><a class "ml-2" href="{% url 'login' %}"> Log In Again </a></small>
+            </div>
+      </div>
+   {% endblock content %}
