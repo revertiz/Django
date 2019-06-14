@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #DJANGO BLOG VARS
 #export SECRET_KEY="e2e5d1788f622ced4fed86376b947c6a1e9bce654ab4fbd7"
-export DEBUG_VALUE="True"
+export DEBUG_VALUE=True
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
